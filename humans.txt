@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <David Schaal> -- <Artist and Technologist> -- <schaal@colorado.edu>
+
+# THANKS
+
+    <Life>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, Javascript, Node, Sass, Gulp
+    Analytics, jQuery, Modernizr, Normalize.css
