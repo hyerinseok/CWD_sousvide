@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <David Schaal> -- <Artist and Technologist> -- <schaal@colorado.edu>
+    <Hyerin Seok> -- <hyerin.seok@colorado.edu>
 
 # THANKS
 
-    <Life>
+    <Ben and Bori>
 
 # TECHNOLOGY COLOPHON
 
