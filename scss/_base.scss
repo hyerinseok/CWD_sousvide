@@ -6,6 +6,61 @@ body {
   margin: auto;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  @include box;
+  text-align: center;
+}
+
+section> h2 {
+  color: #000;
+}
+
+header {
+  @include animotion;
+  @extend .jackInTheBox;
+  z-index: 100 !important;
+  position: relative;
+}
+
+img {
+  @include animotion;
+  @extend .pulse;
+}
+
+section:nth-of-type(odd){
+  @include animotion;
+  @extend .slideInRight;
+  //@include animotion;
+  //@extend .rubberBand;  
+}
+
+section:nth-of-type(even){
+  //@include animotion;
+  //@extend .slideInLeft;
+  @extend [data-aos="boom"];
+  //@include animotion;
+  //@extend .rubberBand;  
+}
+
+[data-aos="boom"]{
+  opacity: 0;
+  margin-left: -550px;
+  transform: rotate(90deg);
+  transition-duration: 5s !important;
+  transition-property: all;
+}
+
+[data-aos="boom"].aos-animate{
+  opacity: 1;
+  margin-left: 0;
+  transform: rotate(0);
+}
+
 h1{
   color: $fontcolor;
   text-align: center;

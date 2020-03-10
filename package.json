@@ -10,11 +10,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "David Schaal",
+  "author": "Hyerin Seok",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "aos": "^3.0.0-beta.6",
+    "gulp-sourcemaps": "^2.6.5"
   }
 }

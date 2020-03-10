@@ -262,6 +262,7 @@ body {
     background-color: #def;
     
     &:before {
+      position: absolute;
       font-size: 5px;
       content: "Small phone!";
     }
@@ -271,6 +272,7 @@ body {
     background-color: #abc;
     
     &:before {
+      position: absolute;
       font-size: 5px;
       content: "Big phone!";
     }    
@@ -280,6 +282,7 @@ body {
     background-color: #fed;
     
     &:before {
+      position: absolute;
       font-size: 5px;
       content: "Tablet!";
     }    
@@ -289,6 +292,7 @@ body {
     background-color: #fab;
     
     &:before {
+      position: absolute;
       font-size: 5px;
       content: "Computer!";
     }
