@@ -2734,14 +2734,33 @@ body {
       body:before {
         position: absolute;
         font-size: 5px;
-        content: "Small phone!"; } }
+        content: "Small phone!"; }
+      body .slide:nth-child(2n) .title {
+        margin-left: 0;
+        margin-right: 0; }
+      body .slide:nth-child(2n+1) .title {
+        margin-left: 0;
+        margin-right: 0; }
+      body .title {
+        width: 90%; }
+      body .slide > img {
+        position: inherit;
+        transform: none;
+        left: 0%;
+        width: 90%;
+        margin-top: 10px; }
+      body .slide > img:nth-of-type {
+        transform: none; } }
   @media (min-width: 641px) {
     body {
       background-color: #abc; }
       body:before {
         position: absolute;
         font-size: 5px;
-        content: "Big phone!"; } }
+        content: "Big phone!"; }
+      body .slide > img {
+        width: 30%;
+        height: 200px; } }
   @media (min-width: 815px) and (max-width: 1023px) {
     body {
       background-color: #fed; }
