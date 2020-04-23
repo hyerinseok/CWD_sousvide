@@ -1,0 +1,78 @@
+<head>
+  <meta charset="utf-8">
+  <title>Hyerin Seok's Creative Web Dev Portal</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+	<script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  <script type="text/javascript">
+    AFRAME.registerComponent('cursor-listener', {
+  init: function () {
+    var lastIndex = -1;
+    var COLORS = ['red', 'green', 'blue'];
+    this.el.addEventListener('click', function (evt) {
+      lastIndex = (lastIndex + 1) % COLORS.length;
+      this.setAttribute('material', 'color', COLORS[lastIndex]);
+      console.log('I was clicked at: ', evt.detail.intersection.point);
+    });
+  }
+});
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Creative Web Development</h1>
+    <h2>Hyerin Seok</h2>
+  </header>
+<a-scene>
+  <a-entity camera look-controls>
+    <a-entity cursor="fuse: true; fuseTimeout: 500"
+              position="0 0 -3"
+              geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.02"
+              material="color: gray; shader: flat"
+              animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
+              animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 1 1 1; to: 0.1 0.1 0.1"
+              animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1"
+  >
+    </a-entity>
+  </a-entity>
+
+<a-entity position="0 2 2" id="box" cursor-listener geometry="primitive: box" material="color: blue"></a-entity>
+
+      <a-text position="0 2 -3" value="hello"></a-text>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9">
+      </a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E">
+      	<a-ring position="0 1 1" radius="0.5" color="#000">
+      		<a-link href="index.html" title="Back to home"></a-link>
+      	</a-ring>
+      </a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>    
+  <!-- javascript -->
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

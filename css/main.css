@@ -2506,7 +2506,9 @@ textarea {
 body {
   background: lightblue;
   font-family: "Open Sans", sans-serif;
-  margin: auto; }
+  margin: auto;
+  text-align: center;
+  align-content: center; }
 
 .container {
   max-width: 960px;
@@ -2732,8 +2734,10 @@ body {
     body {
       background-color: #def; }
       body:before {
-        position: absolute;
-        font-size: 5px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        font-size: 2px;
         content: "Small phone!"; }
       body .slide:nth-child(2n) .title {
         margin-left: 0;
@@ -2755,8 +2759,10 @@ body {
     body {
       background-color: #abc; }
       body:before {
-        position: absolute;
-        font-size: 5px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        font-size: 2px;
         content: "Big phone!"; }
       body .slide > img {
         width: 30%;
@@ -2765,15 +2771,19 @@ body {
     body {
       background-color: #fed; }
       body:before {
-        position: absolute;
-        font-size: 5px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        font-size: 2px;
         content: "Tablet!"; } }
   @media (min-width: 1024px) {
     body {
       background-color: #fab; }
       body:before {
-        position: absolute;
-        font-size: 5px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        font-size: 2px;
         content: "Computer!"; } }
 
 /*# sourceMappingURL=main.css.map */
