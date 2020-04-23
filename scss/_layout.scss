@@ -262,8 +262,10 @@ body {
     background-color: #def;
     
     &:before {
-      position: absolute;
-      font-size: 5px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      font-size: 2px;
       content: "Small phone!";
     }
     .slide:nth-child(2n) .title {
@@ -294,8 +296,10 @@ body {
     background-color: #abc;
     
     &:before {
-      position: absolute;
-      font-size: 5px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      font-size: 2px;
       content: "Big phone!";
     }    
     .slide > img{
@@ -310,8 +314,10 @@ body {
     background-color: #fed;
     
     &:before {
-      position: absolute;
-      font-size: 5px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      font-size: 2px;
       content: "Tablet!";
     }    
   }
@@ -320,8 +326,10 @@ body {
     background-color: #fab;
     
     &:before {
-      position: absolute;
-      font-size: 5px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      font-size: 2px;
       content: "Computer!";
     }
   }
